@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* Custom prose styles for typography */
-.prose {
+.prose { 
   @apply max-w-4xl text-gray-700 leading-relaxed px-4;
 }
 
