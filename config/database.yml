@@ -24,3 +24,7 @@ production:
   queue:
     <<: *primary_production
     url: <%= ENV.fetch("QUEUE_DATABASE_URL", ENV.fetch("DATABASE_URL")) %>
+
+  cache:
+    <<: *primary_production
+    url: <%= ENV.fetch("CACHE_DATABASE_URL", ENV.fetch("DATABASE_URL")) %>
